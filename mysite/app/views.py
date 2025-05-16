@@ -1,5 +1,21 @@
 from django.shortcuts import render
 
-def index(request):
+def home(request):
     context = {}
-    return render(request, "app/index.html", context)
+    return render(request, "app/home.html", context)
+
+def contact(request):
+    context = {}
+    return render(request, "app/contact.html", context)
+
+def data_analysis(request):
+    context = {}
+    return render(request, "app/data_analysis.html", context)
+
+def data_science(request):
+    context = {}
+    return render(request, "app/data_science.html", context)
+
+def web_development(request):
+    context = {}
+    return render(request, "app/web_development.html", context)

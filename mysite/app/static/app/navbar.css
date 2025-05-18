@@ -1,6 +1,5 @@
 .navbar {
     background-color: #F2F3F4;
-    color: black;
     display: flex;
     justify-content: end;
 }
@@ -14,6 +13,10 @@
     align-items: center;
 }
 
+.navbar__link {
+    color: black;
+}
+
 .navbar__link:visited {
-    color: inherit;
+    color: black;
 }

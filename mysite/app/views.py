@@ -4,10 +4,6 @@ def home(request):
     context = {}
     return render(request, "app/home.html", context)
 
-def contact(request):
-    context = {}
-    return render(request, "app/contact.html", context)
-
 def data_analysis(request):
     context = {}
     return render(request, "app/data_analysis.html", context)

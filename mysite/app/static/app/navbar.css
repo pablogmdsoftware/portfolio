@@ -1,0 +1,19 @@
+.navbar {
+    background-color: #F2F3F4;
+    color: black;
+    display: flex;
+    justify-content: end;
+}
+
+.navbar__list {
+    height: 60px;
+    width: 60%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar__link:visited {
+    color: inherit;
+}

@@ -6,7 +6,11 @@
     <title>Data Science</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'app/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'app/navbar.css' %}">
 </head>
 <body>
+    <header>
+        {% include "./inclusions/navbar.html" %}
+    </header>
 </body>
 </html>

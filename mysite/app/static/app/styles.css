@@ -62,7 +62,10 @@ a {
 /* Color theme */
 
 :root {
-
+    --primary: #778570;
+    --secondary: #886176;
+    --base: #f5f5dc;
+    --contrast: #222222;
 }
 
 /* Utility classes */

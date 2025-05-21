@@ -6,11 +6,9 @@
     <title>Home</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'app/styles.css' %}">
-    <link rel="stylesheet" href="{% static 'app/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'app/header.css' %}">
 </head>
 <body>
-    <header>
-        {% include "./inclusions/navbar.html" %}
-    </header>
+    {% include "./inclusions/header.html" %}
 </body>
 </html>

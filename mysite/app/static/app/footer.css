@@ -1,0 +1,6 @@
+.copyright {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--contrast);
+    padding: 0.5rem;
+}

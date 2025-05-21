@@ -80,6 +80,10 @@ a {
     display: none;
 }
 
+.nowrap {
+    text-wrap: nowrap;
+}
+
 .overflow {
     overflow: auto;
 }

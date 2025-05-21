@@ -1,5 +1,6 @@
 .navbar {
-    background-color: #F2F3F4;
+    background-color: var(--base);
+    font-size: 1rem;
     display: flex;
     justify-content: end;
 }
@@ -13,10 +14,13 @@
     align-items: center;
 }
 
-.navbar__link {
-    color: black;
+.navbar__link,
+.navbar__link:visited {
+    color: var(--contrast);
 }
 
-.navbar__link:visited {
-    color: black;
+.navbar__link:hover,
+.navbar__link:focus,
+.navbar__link:active {
+    color: var(--primary);
 }

@@ -14,8 +14,8 @@ body {
     min-height: 100vh;
     font-family: "Roboto", serif;
     font-size: 1rem;
-    /* color: #1E1E1E;
-    background-color: #D9D9D9; */
+    /* color: #1E1E1E; */
+    background-color: var(--base);
 }
 
 header {
@@ -67,6 +67,7 @@ a {
     --base: #f5f5dc;
     --contrast: #222222;
 }
+
 
 /* Utility classes */
 

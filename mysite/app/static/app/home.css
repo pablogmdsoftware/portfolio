@@ -4,4 +4,16 @@
 
 .contact {
     grid-column: 1 / -1;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.contact__link {
+    display: inline-block;
+    width: min-content;
+}
+
+.contact__link,
+.contact__link:visited {
+    color: var(--contrast);
 }

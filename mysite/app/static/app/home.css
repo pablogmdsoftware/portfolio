@@ -9,11 +9,18 @@
 }
 
 .contact__link {
-    display: inline-block;
-    width: min-content;
+    display: block;
+    width: 140px;
+    height: 45px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1rem;
+    display: grid;
+    place-content: center;
 }
 
-.contact__link,
-.contact__link:visited {
-    color: var(--contrast);
+.contact__link:hover {
+    background-color: hsl(100, 9%, 43%);
 }

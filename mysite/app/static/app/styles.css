@@ -14,6 +14,7 @@ body {
     min-height: 100vh;
     font-family: "Roboto", serif;
     font-size: 1rem;
+    line-height: 1.5rem;
     background-color: var(--base);
 }
 

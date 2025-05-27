@@ -25,3 +25,14 @@
 .contact__link:hover {
     background-color: hsl(100, 9%, 43%);
 }
+
+.presentation,
+.contact {
+    width: 700px;
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.contact__infoContainer {
+    margin-bottom: 16px;
+}

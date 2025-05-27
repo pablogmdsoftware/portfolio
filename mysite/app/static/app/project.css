@@ -1,0 +1,22 @@
+.project {
+    width: 65%;
+    height: 300px;
+    grid-column: 1 / -1;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.project__info {
+    padding: 1rem;
+}
+
+.project__images {
+    background-color: var(--primary);
+}
+
+.project__paragraph {
+    padding-bottom: 0.4rem;
+}

@@ -26,8 +26,8 @@
     background-color: hsl(100, 9%, 43%);
 }
 
-.presentation,
-.contact {
+.contact,
+.presentation {
     width: 700px;
     grid-column: 1 / -1;
     justify-self: center;

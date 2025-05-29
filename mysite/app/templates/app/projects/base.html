@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}{% endblock %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'app/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'app/header.css' %}">
+    <link rel="stylesheet" href="{% static 'app/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'app/projects/base.css' %}">
+    {% block css %}{% endblock %}
+</head>
+<body>
+    {% include "../components/header.html" %}
+    {% block main %}{% endblock %}
+    {% include "../components/footer.html" %}
+</body>
+</html>

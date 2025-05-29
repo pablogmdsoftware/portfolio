@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .projects import WEB_DEVELOPMENT
 
 def home(request):
     context = {}
@@ -13,5 +14,5 @@ def data_science(request):
     return render(request, "app/data_science.html", context)
 
 def web_development(request):
-    context = {}
+    context = {"projects": WEB_DEVELOPMENT}
     return render(request, "app/web_development.html", context)

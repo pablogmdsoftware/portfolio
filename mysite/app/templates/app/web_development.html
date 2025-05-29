@@ -13,6 +13,9 @@
 <body>
     {% include "./components/header.html" %}
     <main>
+        {% for project in projects %}
+        {% include "./components/project.html" %}
+        {% endfor %}
     </main>
     {% include "./components/footer.html" %}
 </body>

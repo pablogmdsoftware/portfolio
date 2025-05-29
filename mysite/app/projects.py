@@ -22,5 +22,7 @@ WEB_DEVELOPMENT = [
             "SQL",
             "CRUD Application",
         ],
+        view_name = "bus_system",
+        link_github = "https://github.com/pablogmdsoftware/bus_system",
     ),
 ]

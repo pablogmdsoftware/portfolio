@@ -4,8 +4,8 @@
         <p class="project__paragraph"><strong>Summary:</strong> {{project.summary}}</p>
         <p class="project__paragraph"><strong>Tech stack:</strong> {{project.tech_stack}}</p>
         <p class="project__paragraph"><strong>Keywords:</strong> {{project.keywords}}</p>
-        <a href="" class="project__link">More Info</a>
-        <a href="" class="project__link">Code</a>
+        <a href="{% url project.view_name %}" class="project__link">More Info</a>
+        <a href={{project.link_github}} target="_blank" class="project__link">Code</a>
     </section>
     <section class="project__images"></section>
 </article>

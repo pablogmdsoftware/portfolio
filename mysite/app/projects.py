@@ -5,6 +5,8 @@ class Project(BaseModel):
     summary: str
     tech_stack: list[str]
     keywords: list[str]
+    view_name: str
+    link_github: str
 
 WEB_DEVELOPMENT = [
     Project(

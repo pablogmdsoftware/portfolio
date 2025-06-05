@@ -1,10 +1,30 @@
+{% load static %}
 <header>
     <nav class="navbar">
         <ul class="navbar__list">
-            <li><a href="{% url 'home' %}" class="navbar__link">Home</a></li>
-            <li><a href="{% url 'data_analysis' %}" class="navbar__link">Data Analysis</a></li>
-            <li><a href="{% url 'data_science' %}" class="navbar__link">Data Science</a></li>
-            <li><a href="{% url 'web_development' %}" class="navbar__link">Web Development</a></li>
+            <li><a href="{% url 'home' %}" class="navbar__link hideOnMobile">Home</a></li>
+            <li><a href="{% url 'data_analysis' %}" class="navbar__link hideOnMobile">Data Analysis</a></li>
+            <li><a href="{% url 'data_science' %}" class="navbar__link hideOnMobile">Data Science</a></li>
+            <li><a href="{% url 'web_development' %}" class="navbar__link hideOnMobile">Web Development</a></li>
+            <li class="mobileOnly crossImage"><img src="{% static 'app/images/bars.svg' %}" alt="" width="30px" height="30px" onclick=showSidebar()></li>
+        </ul>
+        <ul id="navbar__mobile" class="navbar__mobile mobileOnly">
+            <li onclick=hideSidebar()><img src="{% static 'app/images/xmark.svg' %}" alt="" width="36px" height="36px"></li>
+            <li><a href="{% url 'home' %}" class="navbar__mobileLink">Home</a></li>
+            <li><a href="{% url 'data_analysis' %}" class="navbar__mobileLink">Data Analysis</a></li>
+            <li><a href="{% url 'data_science' %}" class="navbar__mobileLink">Data Science</a></li>
+            <li><a href="{% url 'web_development' %}" class="navbar__mobileLink">Web Development</a></li>
         </ul>
     </nav>
 </header>
+
+<script>
+    function showSidebar() {
+        const sidebar = document.getElementById("navbar__mobile");
+        sidebar.style.display = "flex";
+    }
+    function hideSidebar() {
+        const sidebar = document.getElementById("navbar__mobile");
+        sidebar.style.display = "none";
+    }
+</script>

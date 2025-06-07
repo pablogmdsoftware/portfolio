@@ -18,5 +18,5 @@ def web_development(request):
     return render(request, "app/web_development.html", context)
 
 def bus_system(request):
-    context = {}
+    context = {"collection":"web_development"}
     return render(request, "app/projects/bus_system.html", context)

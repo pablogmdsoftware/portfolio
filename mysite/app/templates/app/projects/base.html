@@ -14,7 +14,8 @@
 <body>
     {% include "../components/header.html" %}
     <main>
-        {% block main %}{% endblock %}
+        {% block index %}{% endblock %}
+        {% block content %}{% endblock %}
         <a href="{% url collection %}" class="collectionButton">Collection</a>
     </main>
     {% include "../components/footer.html" %}

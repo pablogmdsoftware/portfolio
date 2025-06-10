@@ -12,3 +12,13 @@
     display: grid;
     place-content: center;
 }
+
+.index {
+    width: 100%;
+    grid-column: 1 / 5;
+}
+
+.content {
+    width: 100%;
+    grid-column: 5 / -1;
+}
